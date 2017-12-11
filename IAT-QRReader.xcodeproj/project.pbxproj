@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5B6A0801FDEDB4700899CF9 /* ReadCode+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6A07E1FDEDB4700899CF9 /* ReadCode+CoreDataClass.swift */; };
+		F5B6A0811FDEDB4700899CF9 /* ReadCode+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6A07F1FDEDB4700899CF9 /* ReadCode+CoreDataProperties.swift */; };
 		F5D09A1D1FDEA41000713440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D09A1C1FDEA41000713440 /* AppDelegate.swift */; };
 		F5D09A1F1FDEA41000713440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D09A1E1FDEA41000713440 /* ViewController.swift */; };
 		F5D09A221FDEA41000713440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D09A201FDEA41000713440 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		F5D09A2A1FDEA41000713440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D09A281FDEA41000713440 /* LaunchScreen.storyboard */; };
 		F5D09A351FDEA41000713440 /* IAT_QRReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D09A341FDEA41000713440 /* IAT_QRReaderTests.swift */; };
 		F5D09A401FDEA41000713440 /* IAT_QRReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D09A3F1FDEA41000713440 /* IAT_QRReaderUITests.swift */; };
+		F5D09A501FDEA46D00713440 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D09A4F1FDEA46D00713440 /* QRCodeReader.framework */; };
+		F5D09A521FDEA70500713440 /* AVCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D09A511FDEA70500713440 /* AVCodeReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5B6A07E1FDEDB4700899CF9 /* ReadCode+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadCode+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F5B6A07F1FDEDB4700899CF9 /* ReadCode+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReadCode+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F5D09A191FDEA41000713440 /* IAT-QRReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IAT-QRReader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D09A1C1FDEA41000713440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D09A1E1FDEA41000713440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		F5D09A3B1FDEA41000713440 /* IAT-QRReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IAT-QRReaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D09A3F1FDEA41000713440 /* IAT_QRReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAT_QRReaderUITests.swift; sourceTree = "<group>"; };
 		F5D09A411FDEA41000713440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D09A4F1FDEA46D00713440 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
+		F5D09A511FDEA70500713440 /* AVCodeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCodeReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D09A501FDEA46D00713440 /* QRCodeReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5B6A0751FDEDA3200899CF9 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				F5B6A07E1FDEDB4700899CF9 /* ReadCode+CoreDataClass.swift */,
+				F5B6A07F1FDEDB4700899CF9 /* ReadCode+CoreDataProperties.swift */,
+			);
+			name = entities;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		F5D09A101FDEA41000713440 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 				F5D09A331FDEA41000713440 /* IAT-QRReaderTests */,
 				F5D09A3E1FDEA41000713440 /* IAT-QRReaderUITests */,
 				F5D09A1A1FDEA41000713440 /* Products */,
+				F5D09A4E1FDEA46D00713440 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +119,7 @@
 		F5D09A1B1FDEA41000713440 /* IAT-QRReader */ = {
 			isa = PBXGroup;
 			children = (
+				F5B6A0751FDEDA3200899CF9 /* entities */,
 				F5D09A1C1FDEA41000713440 /* AppDelegate.swift */,
 				F5D09A1E1FDEA41000713440 /* ViewController.swift */,
 				F5D09A201FDEA41000713440 /* Main.storyboard */,
@@ -106,6 +127,7 @@
 				F5D09A281FDEA41000713440 /* LaunchScreen.storyboard */,
 				F5D09A2B1FDEA41000713440 /* Info.plist */,
 				F5D09A231FDEA41000713440 /* IAT_QRReader.xcdatamodeld */,
+				F5D09A511FDEA70500713440 /* AVCodeReader.swift */,
 			);
 			path = "IAT-QRReader";
 			sourceTree = "<group>";
@@ -128,6 +150,14 @@
 			path = "IAT-QRReaderUITests";
 			sourceTree = "<group>";
 		};
+		F5D09A4E1FDEA46D00713440 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D09A4F1FDEA46D00713440 /* QRCodeReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +168,7 @@
 				F5D09A151FDEA41000713440 /* Sources */,
 				F5D09A161FDEA41000713440 /* Frameworks */,
 				F5D09A171FDEA41000713440 /* Resources */,
+				F5D09A4D1FDEA42E00713440 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,13 +288,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F5D09A4D1FDEA42E00713440 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5D09A151FDEA41000713440 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F5D09A1F1FDEA41000713440 /* ViewController.swift in Sources */,
+				F5B6A0801FDEDB4700899CF9 /* ReadCode+CoreDataClass.swift in Sources */,
+				F5B6A0811FDEDB4700899CF9 /* ReadCode+CoreDataProperties.swift in Sources */,
 				F5D09A1D1FDEA41000713440 /* AppDelegate.swift in Sources */,
+				F5D09A521FDEA70500713440 /* AVCodeReader.swift in Sources */,
 				F5D09A251FDEA41000713440 /* IAT_QRReader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +483,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5D6959393;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "IAT-QRReader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.sachweh.IAT-QRReader";
@@ -447,6 +502,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5D6959393;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "IAT-QRReader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.sachweh.IAT-QRReader";
