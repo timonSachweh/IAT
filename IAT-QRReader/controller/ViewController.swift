@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         videoPreview.layer.addSublayer(videoLayer)
         videoPreview.layer.cornerRadius = 10.0
         videoPreview.layer.masksToBounds = true
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func viewDidLayoutSubviews() {
