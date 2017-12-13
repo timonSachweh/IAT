@@ -55,7 +55,13 @@ extension ViewController {
     func fetchString(for code: String) {
         if lastScannedLabel.text != code || lastScanTime.addingTimeInterval(3) < Date()  {
             lastScannedLabel.text = code
+            
+            //show that a code was scanned
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            UIView.animate(withDuration: 2, delay: 0.0, options:[UIViewAnimationOptions.curveEaseInOut], animations: {
+                self.view.backgroundColor = UIColor.green
+                self.view.backgroundColor = UIColor.white
+            }, completion: nil)
             
             //Saving code in the database
             let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
