@@ -1,0 +1,9 @@
+{
+  "commitish" : "8.0.4",
+  "iOS" : [
+    {
+      "hash" : "5734d64102a5f9722e22596cab1206d56356dbf5978b18530633e6b47f9d2ea6",
+      "name" : "QRCodeReader"
+    }
+  ]
+}
